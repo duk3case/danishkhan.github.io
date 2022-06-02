@@ -1,0 +1,159 @@
+/****************************** Tag Selectors *****************************/
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: #40514e;
+  /* centers everything that doesnt have a block value such as width, if it has a block value, then you will need to use margin: 0 auto 0 auto in order to center it. auto sets it to whatever value needed to keep it centered */
+  /* monospace is were each individual character is given an equal amount of space. without it, the letters would look squished*/
+}
+
+hr {
+  border: 6px dotted #EAF6F6;
+  border-width: 8px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+
+}
+h1 {
+  color: #14C38E;
+  margin: 50 auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.65rem;
+  line-height: 3;
+
+  /* 16px = 1em, 1em = 100% , em is dynamic meaning itt will change according with user specification*/
+   /* 100% = 16px. for font size 90, 90/16 = 5.625 *100 = 562.5% */
+/* If you were to put font-size 2em in the body, or the parent of the h1, then the font size would stack, making the 5.625em font size even bigger. This is the same for percentages as well. This doesnt apply to px */
+/* USE rem is the root setting, meaning that it idnores all of the parents. If we put rem, it will not be altered by any of the other parent fonts or upstream size changes */
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+p {
+  line-height: 2;
+}
+.intro {
+  width: 30%;
+  margin: auto;
+  line-height: 2;
+}
+
+.software {
+  font-size: 2.5rem;
+  line-height: 3;
+}
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 250px;
+}
+
+.mountain {
+  position: relative;
+}
+
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+}
+.middle-container {
+  margin: 100px 0;
+}
+
+.me {
+  width: 15%
+}
+.skill-row {
+  margin: 150px auto 150px auto;
+  width: 50%;
+  text-align: left;
+
+
+}
+.fintech {
+  width: 25%;
+   float: left; /*only use float to wrap text around a certain element. DO NOT use it for positioning.Use what we learned such as margin, padding, absolute, and relative positioning to position elements. */
+  margin-right: 30px;
+
+}
+.webdev {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+.soft {
+  text-decoration: underline;
+}
+.btn {
+  background: #11cdd4;
+  background-image: linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  border-radius: 8px;
+  font-family: Montserrat, serif, arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  line-height: 4;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+.bottom-container {
+  background-color: #66bfbf;
+  position: relative;
+  padding: 50px 0 20px;
+/* how we determined this padding: inspect element, margin =16 on the bottom and top, create new padding to cover margin on the bottom and the top. */
+
+}
+
+a{
+  margin: 10px 20px;
+  color: #11999E;
+  text-decoration: none;
+  font-family: 'Montserrat',sans-serif;
+
+}
+a:hover {
+  color: #eaf6f6;
+}
+.contact-me {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+.copyright {
+  color: #eaf6f6;
+  font-size: .75rem;
+  padding: 20px 0;
+}
+/* .aspiring-developer { */
+  /* clear: right; */
+
+
+/* .code-skill-description { */
+  /* clear: left;  clear is essentialy anti float. make sure this left margin is clear and not wroapped around anything*/
+
+/****************************** Class Selectors *****************************/
+/****************************** Application Selectors *****************************/
